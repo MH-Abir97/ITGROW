@@ -1,0 +1,28 @@
+<div class="row" style="margin-top:80px;">
+  <div class="col-md-1">
+
+  </div>
+  <div class="col-md-6" >
+    <div >
+      <iframe width="300" height="200" src="https://www.youtube.com/watch?v=qj_AZ_FkPtQ">
+    </iframe>
+
+
+    </div>
+
+  </div>
+  <div class="col-md-5">
+  <div class="row" *ngFor="let vedio of VedioList.results" style="padding:10px;"(click)="OnVedioOpen(vedio)">
+    <div class="col-md-7">
+      <div class="card-body">
+        <img src="{{vedio.image}}" style="height:140px;width:100%;border-radius:5px;">
+      </div>
+    </div>
+    <div class="col-md-5">
+      <p style="font-size: 14px;color: black;font-weight: bold;">{{vedio.name}}</p>
+    </div>
+  </div>
+  </div>
+
+  </div>
+
